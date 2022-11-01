@@ -22,7 +22,7 @@ Please execute the commands below.
 ```bash
 ./autogen.sh
 ./configure --disable-bench --disable-tests
-make 
+make -j5
 ```
 
 ## Running a regtest bitcoin-sv node
