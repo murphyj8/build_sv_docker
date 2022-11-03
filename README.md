@@ -8,10 +8,9 @@ If you working with nchain, please clone it from the our repos into the current 
 This project requires `Docker` and git to be installed
 
 ## Download SV code into current directory
-The following downloads the code and changes to the develop branch
+The following downloads the bitcoin node code
 ```bash
-git clone ssh://git@bitbucket.stressedsharks.com:8443/sv/sv.git
-git checkout develop
+git clone https://github.com/bitcoin-sv/bitcoin-sv.git
 ```
 
 ## Docker images
