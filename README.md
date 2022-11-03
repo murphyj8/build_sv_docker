@@ -25,7 +25,7 @@ This will start a container running Ubuntu with the required tools to build bitc
 ## To build SV
 Please execute the commands below. 
 ```bash
-cd bitcoin/sv
+cd bitcoin/bitcoin-sv
 ./autogen.sh
 ./configure --disable-bench --disable-tests
 make -j5
