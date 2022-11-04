@@ -5,8 +5,12 @@ Helper container to build bitcoin SV
 This project requires `Docker` and git to be installed
 
 ## Download SV into the current working directory
+## Please note for the current SV github does not build on ubuntu 22.04
 
-git clone https://github.com/bitcoin-sv/bitcoin-sv.git
+```bash
+git clone https://github.com/murphyj8/bitcoin-sv.git
+git checkout fix_ubuntu_22_04
+```
 
 ## Docker images
 Please build and start the docker image as shown below:
