@@ -9,7 +9,9 @@ This project requires `Docker` and git to be installed
 
 ```bash
 git clone https://github.com/murphyj8/bitcoin-sv.git
-git checkout fix_ubuntu_22_04
+cd bitcoin-sv
+git checkout leveldb_submodule
+git submodule update --init --recursive
 ```
 
 ## Docker images
@@ -25,9 +27,10 @@ This will start a container running Ubuntu with the required tools to build bitc
 Please execute the commands below. 
 ```bash
 cd bitcoin/bitcoin-sv
-./autogen.sh
-./configure --disable-bench --disable-tests
-make -j5
+mkdir build
+cd build
+cmake ../ -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON -DLEVELDB_BUILD_TESTS:BOOL=OFF -DLEVELDB_BUILD_BENCHMARKS:BOOL=OFF
+make
 ```
 
 ## Running a regtest bitcoin-sv node

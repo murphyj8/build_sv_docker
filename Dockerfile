@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 
-ENV OPENSSL_VERSION "1.1.1l"
+ENV OPENSSL_VERSION "1.1.1w"
 
 RUN apt-get update \
     && apt-get install -y git \
